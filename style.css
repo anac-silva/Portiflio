@@ -1,5 +1,6 @@
 body{
     margin: 0px;
+    background-color: #36154A ;
 }
 
 
@@ -8,17 +9,27 @@ header{
     height: auto;
     font: 16px Arial;
     color: white;    
-    padding: 20px;
+    padding: 10px 50px 10px;
+    margin: 0% 2%;
+}
+
+h2{
     margin: 0px;
+    padding: 20px 10px 5px 20px;
 }
 
 div#título{
     padding: 10px;
 }
+
+nav{
+    padding: 10px;
+}
+
 nav > a {
     background-color: #36154A;
     border-radius: 5px;
-    padding: 10px 30px;
+    padding: 10px 25px 20px;
     text-align: center;
     width: 100px;
     text-decoration: none;
@@ -26,19 +37,20 @@ nav > a {
 }
 
 a:hover{
-    background-color: blueviolet;
+    background-color: #7351D9;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.116);
 }
 section{
     background-color: #7351D9;
     text-align: justify;
     font: 16px Arial;
-    margin: 0px;
-
+    border-radius: 10px;
+    margin: 0% 5%;
 }
 
 section > p{
-    padding: 5px 20px 20px 20px;
-    margin: 0px
+    padding: 5px 20px 10px 20px;
+    margin: 0px;
 }
 
 footer{
@@ -49,7 +61,31 @@ footer{
     font: 10px Arial;
 }
 
-h2{
-    margin: 0px;
-    padding: 20px 10px 5px 20px;
+
+
+aside > div {
+    display: inline-block;
+    background-color: #05FAE9;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    margin: 40px 50px 0px 0px;
+    font: 16px Arial;
 }
+
+aside{
+    margin: 0% 5%;
+}
+
+
+
+div > p{ 
+    display: none;
+}
+
+div:hover > p{
+    display: block;
+
+} 
