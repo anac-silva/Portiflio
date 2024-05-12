@@ -10,7 +10,7 @@ header{
     font: 16px Arial;
     color: white;    
     padding: 10px 50px 10px;
-    margin: 0% 2%;
+    margin: 1% 2%;
 }
 
 h2{
@@ -63,29 +63,44 @@ footer{
 
 
 
-aside > div {
+.bloco {
     display: inline-block;
-    background-color: #05FAE9;
-    border-radius: 5px;
+    background-attachment: fixed;
+    background: linear-gradient(225deg, #D038ED , #05FAE9 80%);
+    border-radius: 20px;
     padding: 20px;
     text-align: center;
-    height: 200px;
-    width: 200px;
-    margin: 40px 50px 0px 0px;
+    height: 190px;
+    width: 190px;
+    margin: 0px 50px 30px 100px;
+}
+
+.texto{
+    background-color: #000000;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    height: 220px;
+    width: 220px;
     font: 16px Arial;
+ 
+
 }
 
 aside{
-    margin: 0% 5%;
+    margin: 2% 0% 0% 5%;
 }
 
-
-
-div > p{ 
-    display: none;
+.texto > p{ 
+    visibility: hidden;
 }
 
-div:hover > p{
-    display: block;
+.texto:hover > p{
+    visibility: visible;
+    text-align: justify;
+    padding: 10px;
+}
 
-} 
+main{
+    margin-bottom: 20px;
+}
