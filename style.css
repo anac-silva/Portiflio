@@ -1,3 +1,7 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
 body{
     margin: 0px;
     background-color: #36154A ;
@@ -27,13 +31,17 @@ nav{
 }
 
 nav > a {
+    display: inline-flex;
     background-color: #36154A;
     border-radius: 5px;
-    padding: 10px 25px 20px;
+    padding: 10px 25px 10px;
     text-align: center;
     width: 100px;
     text-decoration: none;
     color: white;
+    /* flex-wrap: nowrap; */
+    justify-content: space-evenly;
+    align-items: flex-start;
 }
 
 a:hover{
@@ -44,7 +52,9 @@ section{
     background-color: #7351D9;
     text-align: justify;
     font: 16px Arial;
+    color: white;
     border-radius: 10px;
+    padding: 15px;
     margin: 0% 5%;
 }
 
@@ -70,25 +80,26 @@ footer{
     border-radius: 20px;
     padding: 20px;
     text-align: center;
-    height: 190px;
-    width: 190px;
-    margin: 0px 50px 30px 100px;
+    height: 220px;
+    width: 220px;
+    margin: 20px 50px 30px 100px;
+
 }
 
 .texto{
-    background-color: #000000;
+    background-color: #36154A;
     color: white;
     border-radius: 20px;
-    padding: 10px;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.295);
+    padding: 20px;
     height: 220px;
     width: 220px;
     font: 16px Arial;
- 
-
+    overflow: hidden;
 }
 
 aside{
-    margin: 2% 0% 0% 5%;
+    margin: 3% 0% 0% 5%;
 }
 
 .texto > p{ 
@@ -98,7 +109,7 @@ aside{
 .texto:hover > p{
     visibility: visible;
     text-align: justify;
-    padding: 10px;
+    padding: 50px 10px;
 }
 
 main{
