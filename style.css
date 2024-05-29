@@ -48,17 +48,39 @@ a:hover{
     background-color: #7351D9;
     box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.116);
 }
-section{
+
+main{
+    margin-bottom: 20px;
+}
+
+div.container1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.inicial {
     background-color: #7351D9;
+    display: inline-block;
+    height: auto;
     text-align: justify;
     font: 16px Arial;
     color: white;
     border-radius: 10px;
     padding: 15px;
-    margin: 0% 5%;
+    margin: auto;
+    height: auto; 
+    width: 600px;
 }
 
-section > p{
+.foto1 {
+    display: inline-block;
+    height: 450px; 
+    width: 517px;
+    margin: auto;
+}
+
+.inicial > p{
     padding: 5px 20px 10px 20px;
     margin: 0px;
 }
@@ -112,6 +134,7 @@ aside{
     padding: 50px 10px;
 }
 
-main{
-    margin-bottom: 20px;
-}
+
+
+
+
