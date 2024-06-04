@@ -4,12 +4,12 @@
 
 body{
     margin: 0px;
-    background-color: #36154A ;
+    background-color: #000000 ;
 }
 
 
 header{
-    background-color: #36154A;
+
     height: auto;
     font: 16px Arial;
     color: white;    
@@ -32,14 +32,13 @@ nav{
 
 nav > a {
     display: inline-flex;
-    background-color: #36154A;
+
     border-radius: 5px;
     padding: 10px 25px 10px;
     text-align: center;
     width: 100px;
     text-decoration: none;
     color: white;
-    /* flex-wrap: nowrap; */
     justify-content: space-evenly;
     align-items: flex-start;
 }
@@ -57,6 +56,14 @@ div.container1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    background-attachment: fixed;
+    background: linear-gradient(225deg, #D038ED , #05FAE9 80%);
+    border-radius: 20px;
+    padding: 20px 0px 0px 20px;
+    text-align: center;
+    height: auto; 
+    max-width: 80%;
+    margin: auto;
 }
 
 .inicial {
@@ -70,11 +77,12 @@ div.container1 {
     padding: 15px;
     margin: auto;
     height: auto; 
-    width: 600px;
+    overflow: hidden;
+
 }
 
 .foto1 {
-    display: inline-block;
+    display: flex;
     height: 450px; 
     width: 517px;
     margin: auto;
@@ -83,19 +91,21 @@ div.container1 {
 .inicial > p{
     padding: 5px 20px 10px 20px;
     margin: 0px;
+    text-indent: 15px;
 }
 
 footer{
-    background-color: #36154A;
+    background-color: #1e0a2b;
     padding: 20px;
     color: white;
     text-align: center;
     font: 10px Arial;
+    margin-top: 80px;
 }
 
 
 
-.bloco {
+/*.bloco {
     display: inline-block;
     background-attachment: fixed;
     background: linear-gradient(225deg, #D038ED , #05FAE9 80%);
@@ -120,10 +130,6 @@ footer{
     overflow: hidden;
 }
 
-aside{
-    margin: 3% 0% 0% 5%;
-}
-
 .texto > p{ 
     visibility: hidden;
 }
@@ -132,7 +138,7 @@ aside{
     visibility: visible;
     text-align: justify;
     padding: 50px 10px;
-}
+}*/
 
 
 
