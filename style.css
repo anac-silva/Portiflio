@@ -13,8 +13,16 @@ header{
     height: auto;
     font: 16px Arial;
     color: white;    
-    padding: 10px 50px 10px;
+    padding: 10px 50px 0px;
     margin: 1% 2%;
+}
+
+h1{
+    color: blueviolet;
+    background-image: linear-gradient(to right, #EF0091 , #02DAD3 50%);
+    background-clip: text;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
 }
 
 h2{
@@ -23,7 +31,7 @@ h2{
 }
 
 div#título{
-    padding: 10px;
+    padding: 0px;
 }
 
 nav{
@@ -43,49 +51,56 @@ nav > a {
     align-items: flex-start;
 }
 
-a:hover{
-    background-color: #7351D9;
+nav > a:hover{
+    background-color: #6913DB;
     box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.116);
 }
 
-main{
-    margin-bottom: 20px;
-}
 
-div.container1 {
+
+.bloco {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-attachment: fixed;
-    background: linear-gradient(225deg, #D038ED , #05FAE9 80%);
+    justify-content: center;
+    align-items: center;
+}
+
+div.container1 {
+ 
+    background: linear-gradient(225deg, #EF0091 , #02DAD3 80%);
     border-radius: 20px;
     padding: 20px 0px 0px 20px;
     text-align: center;
-    height: auto; 
-    max-width: 80%;
-    margin: auto;
+    height: auto;
+    max-width: 700px; 
 }
 
 .inicial {
-    background-color: #7351D9;
+    background-color: #6913DB;
     display: inline-block;
-    height: auto;
     text-align: justify;
     font: 16px Arial;
     color: white;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 15px;
     margin: auto;
-    height: auto; 
-    overflow: hidden;
-
+    height: auto;
+    max-width: 700px; 
 }
 
 .foto1 {
-    display: flex;
-    height: 450px; 
-    width: 517px;
-    margin: auto;
+    display: inline-block;
+    height: 300px; 
+    width: auto;
+    margin: 20px;
+}
+
+.foto2 {
+    display: inline-block;
+    height: auto; 
+    width: auto;
+    margin: 20px;
 }
 
 .inicial > p{
@@ -95,13 +110,14 @@ div.container1 {
 }
 
 footer{
-    background-color: #1e0a2b;
-    padding: 20px;
+    background-color: #000000;
+    padding: 5px;
     color: white;
     text-align: center;
     font: 10px Arial;
-    margin-top: 80px;
+    margin-top: 10px;
 }
+
 
 
 
