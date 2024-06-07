@@ -118,7 +118,25 @@ footer{
     margin-top: 10px;
 }
 
+.contact-item {
+    margin: 10px 0;
+    font-size: 18px;    
+}
+.contact-item > a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.contact-item a:hover {
+    text-decoration: underline;
+}
 
+.contact-container {
+    padding: 20px;
+    text-align: justify;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+}
 
 
 /*.bloco {
