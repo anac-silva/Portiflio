@@ -97,8 +97,9 @@ div.container1 {
 }
 
 .foto2 {
-    display: inline-block;
-    height: auto; 
+    display: flex;
+    flex-wrap: nowrap;
+    height: 300px; 
     width: auto;
     margin: 20px;
 }
@@ -139,8 +140,10 @@ footer{
 }
 
 div img{
+    display: block;
     height: 300px;
     margin: 10px;
+    align-items: center;
 }
 
 
