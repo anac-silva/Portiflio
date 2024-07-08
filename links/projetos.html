@@ -3,43 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Projetos - Ana Silva</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <header>
-        <div id="título">
+        <div id="nome-página">
             <h1>Ana Carolina Silva</h1>
+            <h2>Desenvolvedora Front-end</h2>
         </div>
         <nav>
             <a href="../index.html" target="_self">Início</a>
             <a href="sobre.html" target="_self">Sobre</a>
-            <a href="projetos.html" target="_self">Trabalhos</a>
+            <a href="projetos.html" target="_self">Projetos</a>
             <a href="contato.html" target="_self">Contato</a>
         </nav>
     </header>
     <main>
-        <div class="bloco">
-            <div class="container1">
-                <div class="inicial">
-                    <h2>Meus projetos</h2>
+        <section class="container">
+            <div class="container__estilo-borda">
+                <div class="container__texto">
                     <p>Bem-vindo à aba dos meus projetos! Embora atualmente esteja nos estágios iniciais da minha jornada profissional, esta seção será o lar de futuros projetos emocionantes e desafiadores. Fique atento para descobrir como estou expandindo meu portfólio e explorando novas ideias. Estou animada para compartilhar minhas realizações futuras com vocês! 
                     </p>
                     <p>Você também poderá acompanhar meu processo de aprendizado acessando meu perfil no GitHub clicando na imagem ou <a href="https://github.com/anac-silva"target="_blank">aqui</a></p>
                 </div> 
             </div>
-            <div class="foto2">
-                <a href="https://github.com/anac-silva" target="_blank"><img src="../imagens/perfil-Git.png" alt="foto Ana"></a>
-            </div>
-            <div id="projetos">
-                <a href="https://github.com/anac-silva/menu-hamburgueria.git">
-                    <img src="../imagens/projetos/Menu Hamburgueria.png" alt="menu hamburgueria">
-                </a>
-                <a href="https://github.com/anac-silva/teste-netbil-educacional.git">
-                    <img src="../imagens/projetos/Blog Netbil.png" alt="Blog Netbil">
-                </a>
-            </div>
-        </div>
+        </section>
+        <section id="projetos">
+            <a href="https://github.com/anac-silva/menu-hamburgueria.git" class="projetos_link">
+                <img src="../imagens/projetos/Menu Hamburgueria.png" alt="Cardápio hamburgueria Best Burguer, com lista de hamburguers, descrição e valor.">
+            </a>
+            <a href="https://github.com/anac-silva/teste-netbil-educacional.git" class="projetos_link">
+                <img src="../imagens/projetos/Blog Netbil.png" alt="Blog Netbil com foto da página inicial, contém um menino e mais abaixo uma lista de artigos para acesso.">
+            </a>
+        </section>
     </main>
     <footer>
         <p><em>Criado por Ana Silva - Desenvolvedora Front-end</em></p>
