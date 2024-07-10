@@ -153,7 +153,7 @@ footer{
 .container__contato__item {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     margin: 10px 0;
     font-size: 15px;   
     height: 30px; 
