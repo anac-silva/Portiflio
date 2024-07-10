@@ -15,7 +15,7 @@ Bem-vindo ao meu portfólio! Este repositório contém uma coleção dos meus pr
 ## Contato
 
 - Email: ana.carolina3551@gmail.com
-- LinkedIn: [Ana Silva](linkedin.com/in/ana-carolina-silva-2aab8a164)
+- LinkedIn: [Ana Silva](https://www.linkedin.com/in/anac-nsilva/)
 
 ## Como Contribuir
 
