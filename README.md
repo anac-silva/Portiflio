@@ -1,22 +1,48 @@
-# Portfólio de Ana Silva
+# 🌐 Portfólio - Ana Carolina Nunes da Silva
 
-Bem-vindo ao meu portfólio! Este repositório contém uma coleção dos meus projetos e trabalhos que estarei desenvolvendo ao longo do tempo. Sinta-se à vontade para explorar os projetos e entre em contato caso tenha alguma pergunta ou feedback.
+Bem-vindo(a) ao repositório do meu portfólio pessoal!  
+Este projeto foi desenvolvido com o objetivo de apresentar minha trajetória profissional, habilidades técnicas e projetos desenvolvidos como Front-End Developer.
 
-## Sobre Mim
+## 📌 Sobre
 
-  Sou Ana Carolina, Desenvolvedora Frontend Jr apaixonada por criar experiências digitais envolventes e acessíveis. Com um histórico em Engenharia Civil, estou embarcando em uma emocionante transição de carreira para me concentrar totalmente no desenvolvimento web. 
-  
-  Ao longo dos anos, desenvolvi habilidades sólidas em HTML, CSS e JavaScript. Hoje busco minha primeira oportunidade efetiva na área para aprimorar minha capacidade de criar interfaces intuitivas e funcionais. 
-  
-  Estou animada para trazer minha paixão pelo frontend para novos desafios e colaborar com equipes visionárias que compartilham meu compromisso com a inovação e a excelência técnica.
-  
-  Estou aberta a oportunidades que me permitam expandir meu conhecimento em frameworks modernos como React, Vue.js e Angular.
+Este portfólio é uma aplicação web responsiva que visa destacar:
 
-## Contato
+- Informações sobre mim
+- Projetos desenvolvidos
+- Formas de contato
 
-- Email: ana.carolina3551@gmail.com
-- LinkedIn: [Ana Silva](https://www.linkedin.com/in/anac-nsilva/)
+---
 
-## Como Contribuir
+## ✨ Funcionalidades
 
-Se você identificar algum problema nos projetos ou tiver sugestões de melhoria, sinta-se à vontade para abrir uma issue ou enviar um pull request. Sua contribuição é muito bem-vinda!
+- Design responsivo
+- Navegação por páginas (Home, Projetos, Contato)
+- Estrutura clara e objetiva
+- Animações suaves para melhor experiência do usuário
+
+---
+
+## 🚀 Tecnologias Utilizadas
+
+- **HTML5**
+- **CSS3**
+- **JavaScript**
+
+---
+
+## 🛠️ Como Usar
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/anac-silva/Portiflio.git
+Abra o arquivo index.html no seu navegador.
+
+📬 Contato
+Se você quiser conversar sobre tecnologia, projetos ou oportunidades, entre em contato comigo:
+
+📧 desenvolvedora.ana.silva@gmail.com
+
+💼 LinkedIn https://www.linkedin.com/in/carolinamerloti/
+
+📝 Licença
+Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
