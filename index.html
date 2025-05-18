@@ -3,46 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio Ana Silva</title>
+    <title>Ana Carolina</title>
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header>
-        <div id="nome-página">
-            <h1>Ana Carolina Silva</h1>
-            <h2>Desenvolvedora Front-end</h2>
-        </div>
+        
         <nav>
-            <a href="index.html" target="_self">Início</a>
-            <a href="links/sobre.html" target="_self">Sobre</a>
-            <a href="links/projetos.html" target="_self">Projetos</a>
-            <a href="links/contato.html" target="_self">Contato</a>
+            <ul>
+                <li><a href="#nome-pagina">Início</a></li>
+                <li><a href="#sobre-mim">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
         </nav>
     </header>
     <main>
-        <section class="container">
-            <div class="container__estilo-borda">
-                <div class="container__texto">
-                    <h3>Portfólio de Desenvolvimento Front-End</h3>
-                    <p>Seja bem-vindo ao meu portfólio digital! Eu sou Ana Carolina Silva, uma Desenvolvedora Front-End apaixonada por criar interfaces intuitivas. Neste espaço, compartilho minha jornada profissional, projetos, habilidades e realizações. Navegue pelas diferentes guias para explorar mais sobre mim e meu trabalho.</p>
-                    <p>Navegue pelas diferentes seções para conhecer mais sobre mim, explorar meus trabalhos e descobrir como posso contribuir para o sucesso do seu próximo projeto.</p>
-
-                    <h4>Explorar meu Portfólio:</h4>
-                        
-                    <ul class="container__texto">
-                        <li><strong>Sobre mim:</strong> Saiba mais sobre minha formação, experiência e as tecnologias que domino.</li>
-                        <li><strong>Projetos:</strong> Veja exemplos de projetos que desenvolvi, incluindo detalhes técnicos e meu papel em cada um deles.</li>
-                        <li><strong>Contato:</strong> Entre em contato comigo para oportunidades de trabalho, colaborações ou apenas para dizer olá.</li>
-                    </ul>
-                        
-                    <p>Obrigado por visitar e aproveite a jornada!</p>
-                </div>
+        <section id="nome-pagina">
+            <div id="img">
+                <img src="imagens/Foto perfil.jpeg" alt="Foto mulher branca, cabelos longos e pretos com blusa social.">
             </div>
-            <div class="container__foto">
-                <img src="imagens/decor-300.jpg" alt="Desenho contendo uma menina em frente a um computador programando com fundo colorido.">
+            <div id="texto">
+                <h1>Ana Carolina Merloti</h1>
+                <h2>Desenvolvedora Front-end</h2>
             </div>
         </section>
+
+        <section id="inicio-pagina">
+            <div>
+                <h3>Seja bem-vindo(a) ao meu portifólio!</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium asperiores adipisci esse necessitatibus animi numquam beatae, ex repellat saepe perferendis ipsam quod, officiis hic eos voluptate provident, consectetur sapiente eum!</p>
+            </div>
+            
+        </section>
+
+        <section id="sobre-mim">
+            <h3>Sobre mim</h3>
+            <p>Sou Ana Carolina Nunes Merloti, profissional em transição de carreira com sólida experiência em Engenharia Civil e Gestão de Projetos.          Durante minha atuação na indústria, senti a necessidade de aprimorar ferramentas e processos de gestão. Foi nesse momento que iniciei meus estudos em Python, buscando automatizar tarefas e trazer mais eficiência à rotina dos projetos.</p>
+
+            <p>O que começou como uma necessidade virou paixão. Descobri na tecnologia um universo de possibilidades e me encantei pela lógica, criação de soluções digitais e impacto real que o desenvolvimento pode gerar. Foi aí que decidi dar um novo rumo à minha carreira.</p>
+
+            <p>Desde então, venho me especializando como Desenvolvedora Front-End, com foco em criar interfaces modernas, acessíveis e centradas no usuário. Minha bagagem em gestão me ajuda a unir visão estratégica, organização e foco em resultados na criação de soluções digitais. Abaixo, compartilho os principais marcos da minha trajetória:</p>
+
+            <picture>
+                <source media="(max-width: 1000px)" srcset="imagens/timelineV.png">
+                <img src="imagens/timelineH.png" class="img-timeline" alt="Imagem mostrando a linha do tempo profissional de Ana Carolina Nunes Merloti, destacando os principais marcos de sua carreira.">
+            </picture>
+        </section>
+
+        <section id="projetos">
+            <h3>Projetos</h3>
+            <div id="card"> 
+                <div class="cards-projeto">
+                    <img src="imagens/Calmaria Spa.png" alt="Print de uma tela mostrando um site chamado calmaria spa.">
+                    <h4>Site Calmaria SPA</h4>
+                </div>
+
+                <div class="cards-projeto">
+                    <img src="imagens/Menu Hamburgueria.png" alt="Print de uma tela mostrando um site para pedido na hamburgueria Best Burguer.">
+                    <h4>Site Pedidos Best Burguer</h4>
+                </div>
+
+                <div class="cards-projeto">
+                    <img src="imagens/Netbil Educacional.png" alt="Print de uma tela mostrando um site escolar.">
+                    <h4>Site Netbil Educacional</h4>
+                </div>
+
+                <div class="cards-projeto">
+                    <img src="imagens/Site contato.png" alt="Print de uma tela mostrando um site com redes sociais para contato.">
+                    <h4>Site com links para contato</h4>
+                </div>
+
+                <div class="cards-projeto">
+                    <img src="imagens/Site Meteora.png" alt="Print de uma tela mostrando um site de vendas de roupas.">
+                    <h4>Site Meteora</h4>
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="contato">
+            <h3>Entre em contato</h3>
+                <nav class="contato-links">
+                        
+                    <a href="https://wa.me/5518998219709"  target="_blank" ><img src="../imagens/logo-whatsapp.png" alt="logo do whatsapp"><p>WhatsApp</p></a>
+                        
+                    <a href="mailto:desenvolvedora.ana.silva@gmail.com" ><img src="../imagens/logo-gmail.png" alt="logo do Gmail"> <p>Email</p></a>
+                        
+                    <a href="https://www.linkedin.com/in/carolinamerloti/" target="_blank" ><img src="../imagens/logo-linkedin.png" alt="logo do linkedIn"><p>LinkedIn</p></a>
+                        
+                    <a href="https://github.com/anac-silva" target="_blank" ><img src="../imagens/logo-github.png" alt="logo do GitHub"><p>GitHub</p></a>
+                </nav>
+        </section>
+
     </main>
     <footer>
         <p><em>Criado por <strong>Ana Silva</strong> - Desenvolvedora Front-end</em></p>

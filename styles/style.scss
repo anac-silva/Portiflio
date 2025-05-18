@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Poppins:wght@400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Poppins:wght@300;400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --cor-fundo-principal: 	#121E2C;
+    --fundo-secundario: #142e49;
+    --letra-princial: 	#E5E5E5;
+    --letra-secundaria: 	#A6DBE1;
+    --letra-terciaria: #0D1724;
+    --caixas-detalhes: 	#E5E5E5;
+    --fonte-detalhe: 'Poppins';
+    --fonte-texto: 'Inter';
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    color: var(--letra-princial);
+}
+
+body{
+    font-family: var(--fonte-texto);
+    background-color: var(--cor-fundo-principal);
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    nav{
+        margin: 2% 5% 2% 0;
+        ul{
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            flex-wrap: wrap;
+            li{
+                display: flex;
+                justify-content: center;
+                width: 100px;
+                padding: 10px;
+                margin: 0 20px;
+                a{
+                    text-decoration:none;
+                    font-size: 1.3rem;
+                }
+            }
+        
+        }
+
+    }
+   
+}
+
+main{
+    align-items: center;
+    #nome-pagina{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 20px;
+        img{
+            max-width: 250px;
+            padding: 0 90px;
+        }
+        @media (min-width: 1250px){
+            margin: 0 15%;
+        }
+        #texto{
+            padding: 30px 0px;
+            h1 {
+                font: italic 3rem "Playfair Display", serif;
+                color: var(--letra-secundaria);
+                text-align: center;
+                max-width: 600px;
+            }
+
+            @media (max-width: 480px) {
+                h1 {
+                    font-size: 2.5rem; 
+                    padding: 20px;
+                } 
+            }
+            @media (min-width: 1200px) {
+                h1 {
+                    font-size: 4rem; 
+                    padding: 20px;
+                } 
+            }
+
+            h2{
+                font-size: 1rem;
+                font-weight: 100;
+                text-align: center;
+            }
+        }        
+    }
+
+    #inicio-pagina {
+        background-color: var(--fundo-secundario);
+        padding-bottom: 3%;
+        div{
+            max-width: 1000px;
+            min-width: 80%;
+            margin: auto;
+            background-color: var(--fundo-secundario);
+            h3{
+                color: var(--letra-secundaria);
+                font-size: 2rem;
+                padding: 2rem 0;
+                text-align: center;
+                margin: 0 10%;
+            }
+            p {
+                text-align: justify;  
+                margin: 0 10%;        
+            }
+        }
+    }
+
+    #sobre-mim {
+        margin-top: 40px;
+        min-width: 80%;
+        max-width: 1000px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        h3{
+            color: var(--letra-secundaria);
+            font-size: 2rem;
+            padding: 2rem;
+            text-align: center;
+        }
+        p{
+            text-align: justify;
+            font: 100 1rem;
+            padding: 5px;
+            margin: 0 10%;
+        }
+        .img-timeline {
+        width: 800px;
+        height: auto;
+        max-width: 100%;
+        padding: 30px 0;
+        }
+
+        @media (max-width: 1000px) {
+            .img-timeline {
+                width: 450px;
+            }
+        }
+    }      
+
+    #projetos{
+        background-color: var(--fundo-secundario);
+        padding: 3% 0;   
+        h3{
+            color: var(--letra-secundaria);
+            font-size: 2rem;
+            text-align: center;  
+        }
+        #card{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            .cards-projeto {
+                display: flex;
+                flex-direction: column;
+                background-color: var(--caixas-detalhes);
+                border-radius: 5px;
+                box-shadow: 2px 5px 20px #0D1724;
+                min-width: 100px;
+                max-width: 300px;
+                margin: 2px;
+                padding: 3px 0px;
+                margin-top: 40px;                    
+                img{
+                    width: auto;
+                }
+
+                h4{
+                    text-align: center;
+                    padding: 20px;
+                    color: var(--letra-terciaria);
+                }
+            }
+        }
+        
+    }
+
+    #contato{
+        padding-bottom: 2%;
+        
+        h3{
+            color: var(--letra-secundaria);
+            font-size: 2rem;
+            padding: 2rem;
+            text-align: center;
+        }
+        .contato-links{
+            display: flex;
+            justify-content: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin: auto;
+            width: 80%;
+            a{
+                display: flex;
+                flex-direction: column;
+                text-decoration: none;
+                width: 130px;
+                align-items: center;
+                margin:10px 30px;
+                img{
+                    width: 40px;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
+
+footer{
+    background-color: var(--fundo-secundario);
+    padding: 2%;
+    text-align: center;
+}
+
