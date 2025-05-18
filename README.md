@@ -26,7 +26,7 @@ Este portfólio é uma aplicação web responsiva que visa destacar:
 
 - **HTML5**
 - **CSS3**
-- **JavaScript**
+- **SASS**
 
 ---
 
