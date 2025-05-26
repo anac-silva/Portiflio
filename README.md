@@ -22,11 +22,13 @@ Este portfólio é uma aplicação web responsiva que visa destacar:
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+## 🚀 Tecnologias
 
 - **HTML5**
 - **CSS3**
 - **SASS**
+- **JAVASCRIPT**
+- **REACT**
 
 ---
 
