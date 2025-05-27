@@ -59,11 +59,6 @@ main h3 {
   text-align: center;
   margin: 0 10%;
 }
-main p {
-  text-align: justify;
-  margin: 0 10%;
-  padding: 10px;
-}
 main #nome-pagina {
   display: flex;
   align-items: center;
@@ -72,10 +67,9 @@ main #nome-pagina {
   padding: 20px;
 }
 main #nome-pagina img {
-  max-width: 250px;
-  padding: 0 90px;
+  max-width: 150px;
 }
-@media (min-width: 1250px) {
+@media (min-width: 1200px) {
   main #nome-pagina {
     margin: 0 15%;
   }
@@ -106,6 +100,11 @@ main #nome-pagina #texto h2 {
   font-weight: 100;
   text-align: center;
 }
+main #nome-pagina #texto p {
+  text-align: justify;
+  margin: 0 10%;
+  padding: 10px;
+}
 main #inicio-pagina {
   background-color: var(--fundo-secundario);
   padding-bottom: 3%;
@@ -115,6 +114,11 @@ main #inicio-pagina div {
   min-width: 80%;
   margin: auto;
   background-color: var(--fundo-secundario);
+}
+main #inicio-pagina div p {
+  text-align: justify;
+  margin: 0 10%;
+  padding: 10px;
 }
 main #sobre-mim {
   margin-top: 40px;
@@ -133,59 +137,72 @@ main #sobre-mim .img-timeline {
 }
 @media (max-width: 1000px) {
   main #sobre-mim .img-timeline {
-    width: 450px;
+    width: 350px;
   }
 }
-main #formacoes {
+main #sobre-mim p {
+  text-align: justify;
+  margin: 0 10%;
+  padding: 10px;
+}
+main #container-formacoes {
   background-color: var(--fundo-secundario);
   margin-top: 40px;
-  margin: auto;
   display: flex;
   flex-direction: column;
-  padding: 0 10%;
 }
-main #formacoes p {
-  text-align: justify;
-  margin: 0 10%;
-}
-main #formacoes h4 {
-  color: var(--letra-secundaria);
-  font-size: 1.8rem;
-  padding: 2rem 0;
-  text-align: center;
-  margin: 0 10%;
-}
-main #formacoes ul {
-  list-style: none;
-}
-main #formacoes ul p {
-  padding: 10px 4%;
-  text-align: justify;
-  margin: 0 10%;
-}
-main #formacoes #lista-cursos {
+main #container-formacoes #formacoes {
   display: flex;
-  max-width: 80%;
+  flex-direction: column;
   margin: auto;
-  flex-wrap: wrap;
-  justify-content: center;
+  box-shadow: 5px 5px 10px #121E2C;
+  border-radius: 10px;
 }
-@media (min-width: 1560px) {
-  main #formacoes #lista-cursos {
-    justify-content: space-between;
+@media (max-width: 700px) {
+  main #container-formacoes #formacoes {
+    margin: 0 10%;
   }
 }
-main #formacoes #lista-cursos .cursos {
-  padding: 30px 0px;
-  width: 600px;
+main #container-formacoes #formacoes p {
+  background-color: var(--cor-fundo-principal);
+  text-align: justify;
+  padding: 10px;
+}
+main #container-formacoes #lista-cursos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 10%;
+}
+@media (max-width: 1500px) {
+  main #container-formacoes #lista-cursos {
+    justify-content: space-evenly;
+    padding: 0 10% 5% 10%;
+  }
+}
+main #container-formacoes #lista-cursos .cursos {
+  background-color: var(--cor-fundo-principal);
+  padding: 30px 30px;
+  margin: 10px;
+  width: 400px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   list-style: none;
+  box-shadow: 5px 5px 10px #121E2C;
 }
-main #formacoes #lista-cursos .cursos h5 {
+main #container-formacoes #lista-cursos .cursos h4 {
   text-align: justify;
   font-size: 1.3rem;
+  padding: 10px 0;
+}
+main #container-formacoes #lista-cursos .cursos ul {
+  list-style: none;
+}
+main #container-formacoes #lista-cursos .cursos ul p {
+  padding: 10px 0;
+  text-align: justify;
+  margin: 0 5%;
 }
 main #projetos {
   background-color: var(--cor-fundo-principal);
@@ -213,7 +230,7 @@ main #projetos #card .cards-projeto img {
 }
 main #projetos #card .cards-projeto h4 {
   text-align: center;
-  padding: 20px;
+  padding: 15px;
   color: var(--letra-terciaria);
 }
 main #contato {

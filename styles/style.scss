@@ -65,11 +65,7 @@ main{
         margin: 0 10%;
     }
 
-    p {
-        text-align: justify;  
-        margin: 0 10%;  
-        padding: 10px;      
-    }
+    
     #nome-pagina{
         display: flex;
         align-items: center;
@@ -77,10 +73,9 @@ main{
         justify-content: space-evenly;
         padding: 20px;
         img{
-            max-width: 250px;
-            padding: 0 90px;
+            max-width: 150px;
         }
-        @media (min-width: 1250px){
+        @media (min-width: 1200px){
             margin: 0 15%;
         }
         #texto{
@@ -110,6 +105,11 @@ main{
                 font-weight: 100;
                 text-align: center;
             }
+            p {
+                text-align: justify;  
+                margin: 0 10%;  
+                padding: 10px;      
+            }
         }        
     }
 
@@ -122,6 +122,11 @@ main{
             margin: auto;
             background-color: var(--fundo-secundario);
             
+            p {
+                text-align: justify;  
+                margin: 0 10%;  
+                padding: 10px;      
+            }
             
         }
     }
@@ -144,63 +149,74 @@ main{
 
         @media (max-width: 1000px) {
             .img-timeline {
-                width: 450px;
+                width: 350px;
             }
+        }
+
+        p {
+            text-align: justify;  
+            margin: 0 10%;  
+            padding: 10px;      
         }
     }  
     
-    #formacoes{
+    #container-formacoes{
         background-color: var(--fundo-secundario);
         margin-top: 40px;
-        margin: auto;
         display: flex;
         flex-direction: column;
-        padding: 0 10%;
-        p{
-            text-align: justify;
-            margin: 0 10%;
-        }
-
-        h4{
-            color: var(--letra-secundaria);
-            font-size: 1.8rem;
-            padding: 2rem 0;
-            text-align: center;
-            margin: 0 10%;
-        }
-        
-
-        ul{
-            list-style: none;
-            p{
-                padding: 10px 4%;
-                text-align: justify;
-                margin: 0 10%;
-                
+        #formacoes{
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            box-shadow: 5px 5px 10px #121E2C;
+            border-radius: 10px;
+            @media (max-width: 700px) {
+                margin: 0 10%;  
             }
-        
+            p{
+                background-color: var(--cor-fundo-principal);
+                text-align: justify;  
+                padding: 10px;
+            } 
+            
         }
+                   
+
 
         #lista-cursos{
             display: flex;
-            max-width: 80%;
-            margin: auto;
             flex-wrap: wrap;  
             justify-content: center;
-            @media (min-width: 1560px) {
-                justify-content: space-between;
+            padding-bottom: 10%;
+            @media (max-width: 1500px) {
+                justify-content: space-evenly;
+                padding: 0 10% 5% 10%;
             }
             .cursos{
-                padding: 30px 0px;
-                width: 600px;
+                background-color: var(--cor-fundo-principal);
+                padding: 30px 30px;
+                margin: 10px;
+                width: 400px;
                 display: flex;
                 flex-direction: column;
                 flex-wrap: wrap;
                 list-style: none;
-                h5{
+                box-shadow: 5px 5px 10px #121E2C;
+                h4{
                     text-align: justify; 
                     font-size: 1.3rem;
-
+                    padding: 10px 0;
+                }
+                        
+                ul{
+                    list-style: none;
+                    p{
+                        padding: 10px 0;
+                        text-align: justify;
+                        margin: 0 5%;
+                    }
+                
                 }
             }
             
@@ -232,7 +248,7 @@ main{
 
                 h4{
                     text-align: center;
-                    padding: 20px;
+                    padding: 15px;
                     color: var(--letra-terciaria);
                 }
             }
