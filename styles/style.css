@@ -52,6 +52,18 @@ header nav ul li a {
 main {
   align-items: center;
 }
+main h3 {
+  color: var(--letra-secundaria);
+  font-size: 2rem;
+  padding: 2rem 0;
+  text-align: center;
+  margin: 0 10%;
+}
+main p {
+  text-align: justify;
+  margin: 0 10%;
+  padding: 10px;
+}
 main #nome-pagina {
   display: flex;
   align-items: center;
@@ -104,17 +116,6 @@ main #inicio-pagina div {
   margin: auto;
   background-color: var(--fundo-secundario);
 }
-main #inicio-pagina div h3 {
-  color: var(--letra-secundaria);
-  font-size: 2rem;
-  padding: 2rem 0;
-  text-align: center;
-  margin: 0 10%;
-}
-main #inicio-pagina div p {
-  text-align: justify;
-  margin: 0 10%;
-}
 main #sobre-mim {
   margin-top: 40px;
   min-width: 80%;
@@ -123,18 +124,6 @@ main #sobre-mim {
   display: flex;
   align-items: center;
   flex-direction: column;
-}
-main #sobre-mim h3 {
-  color: var(--letra-secundaria);
-  font-size: 2rem;
-  padding: 2rem;
-  text-align: center;
-}
-main #sobre-mim p {
-  text-align: justify;
-  font: 100 1rem;
-  padding: 5px;
-  margin: 0 10%;
 }
 main #sobre-mim .img-timeline {
   width: 800px;
@@ -147,14 +136,60 @@ main #sobre-mim .img-timeline {
     width: 450px;
   }
 }
-main #projetos {
+main #formacoes {
   background-color: var(--fundo-secundario);
-  padding: 3% 0;
+  margin-top: 40px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10%;
 }
-main #projetos h3 {
+main #formacoes p {
+  text-align: justify;
+  margin: 0 10%;
+}
+main #formacoes h4 {
   color: var(--letra-secundaria);
-  font-size: 2rem;
+  font-size: 1.8rem;
+  padding: 2rem 0;
   text-align: center;
+  margin: 0 10%;
+}
+main #formacoes ul {
+  list-style: none;
+}
+main #formacoes ul p {
+  padding: 10px 4%;
+  text-align: justify;
+  margin: 0 10%;
+}
+main #formacoes #lista-cursos {
+  display: flex;
+  max-width: 80%;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (min-width: 1560px) {
+  main #formacoes #lista-cursos {
+    justify-content: space-between;
+  }
+}
+main #formacoes #lista-cursos .cursos {
+  padding: 30px 0px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style: none;
+}
+main #formacoes #lista-cursos .cursos h5 {
+  text-align: justify;
+  font-size: 1.3rem;
+}
+main #projetos {
+  background-color: var(--cor-fundo-principal);
+  padding: 3% 0;
 }
 main #projetos #card {
   display: flex;
@@ -183,12 +218,6 @@ main #projetos #card .cards-projeto h4 {
 }
 main #contato {
   padding-bottom: 2%;
-}
-main #contato h3 {
-  color: var(--letra-secundaria);
-  font-size: 2rem;
-  padding: 2rem;
-  text-align: center;
 }
 main #contato .contato-links {
   display: flex;
