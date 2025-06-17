@@ -5,10 +5,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 :root {
-    --cor-fundo-principal: 	#121E2C;
-    --fundo-secundario: #142e49;
-    --letra-princial: 	#E5E5E5;
-    --letra-secundaria: 	#A6DBE1;
+    --cor-fundo-principal: 	#070008;
+    --fundo-secundario: #b093ff;
+    --letra-principal: 	#cccace;
+    --letra-secundaria: 	#5f76fc;
     --letra-terciaria: #0D1724;
     --caixas-detalhes: 	#E5E5E5;
     --fonte-detalhe: 'Poppins';
@@ -18,12 +18,12 @@
 *{
     padding: 0;
     margin: 0;
-    color: var(--letra-princial);
+    color: var(--letra-principal);
 }
 
 body{
     font-family: var(--fonte-texto);
-    background-color: var(--cor-fundo-principal);
+    background: linear-gradient(0deg,  #2f0494, #170155,#070018, )
 }
 
 header{
@@ -39,7 +39,7 @@ header{
             flex-wrap: wrap;
             li{
                 display: flex;
-                justify-content: center;
+                justify-content: left;
                 width: 100px;
                 padding: 10px;
                 margin: 0 20px;
@@ -48,8 +48,13 @@ header{
                     font-size: 1.3rem;
                 }
             }
-        
+            li:hover{
+                background-color: var(--letra-secundaria);
+                border-radius: 5px;
+            }
         }
+
+            
 
     }
    
@@ -57,13 +62,7 @@ header{
 
 main{
     align-items: center;
-    h3{
-        color: var(--letra-secundaria);
-        font-size: 2rem;
-        padding: 2rem 0;
-        text-align: center;
-        margin: 0 10%;
-    }
+    
 
     
     #nome-pagina{
@@ -71,20 +70,35 @@ main{
         align-items: center;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        padding: 20px;
+        padding-top: 50px;
+        width: 70%;
+        margin: auto;
+
         img{
-            max-width: 150px;
-        }
-        @media (min-width: 1200px){
-            margin: 0 15%;
+            max-width: 250px;
         }
         #texto{
-            padding: 30px 0px;
+
             h1 {
-                font: italic 3rem "Playfair Display", serif;
-                color: var(--letra-secundaria);
                 text-align: center;
-                max-width: 600px;
+                padding: 25px 0;
+                font-size: 2.8rem;
+                max-width: 800px;
+                text-transform: uppercase;
+                background: linear-gradient(90deg,#36BFB6, #4833EB, #EC096F,#f47215, );
+                background-size: 300% 100%;
+                animation: degrade 10s linear infinite alternate;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            @keyframes degrade {
+                0% {
+                    background-position: 0% 50%;
+                }
+                100% {
+                    background-position: 100% 50%;
+                }
             }
 
             @media (max-width: 480px) {
@@ -101,9 +115,10 @@ main{
             }
 
             h2{
-                font-size: 1rem;
+                font-size: 1.2rem;
                 font-weight: 100;
                 text-align: center;
+
             }
             p {
                 text-align: justify;  
@@ -114,17 +129,28 @@ main{
     }
 
     #inicio-pagina {
-        background-color: var(--fundo-secundario);
-        padding-bottom: 3%;
+        background-image: url(/imagens/Detalhe\ fundo.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: color-burn 2%;
+        min-height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         div{
             max-width: 1000px;
             min-width: 80%;
-            margin: auto;
-            background-color: var(--fundo-secundario);
-            
+            h3{
+                color: var(--letra-secundaria);
+                font-size: 2rem;
+                padding: 1rem 0 3rem;
+                text-align: center;
+                margin: 0 10%;
+            }
             p {
                 text-align: justify;  
-                margin: 0 10%;  
+                margin: 0 2%;  
                 padding: 10px;      
             }
             
@@ -132,101 +158,114 @@ main{
     }
 
     #sobre-mim {
-        margin-top: 40px;
+        margin-top: 50px;
         min-width: 80%;
         max-width: 1000px;
         margin: auto;
         display: flex;
         align-items: center;
         flex-direction: column;
-
-        .img-timeline {
-        width: 800px;
-        height: auto;
-        max-width: 100%;
-        padding: 30px 0;
+        h3{
+            color: var(--letra-secundaria);
+            font-size: 2rem;
+            padding: 1rem 0 3rem;
+            text-align: center;
+            margin: 0 10%;
         }
-
-        @media (max-width: 1000px) {
-            .img-timeline {
-                width: 350px;
-            }
-        }
-
         p {
             text-align: justify;  
-            margin: 0 10%;  
+            margin: 0 2%;  
             padding: 10px;      
         }
-    }  
-    
-    #container-formacoes{
-        background-color: var(--fundo-secundario);
-        margin-top: 40px;
-        display: flex;
-        flex-direction: column;
-        #formacoes{
+
+        #linhadotempo{
             display: flex;
             flex-direction: column;
-            margin: auto;
-            box-shadow: 5px 5px 10px #121E2C;
-            border-radius: 10px;
-            @media (max-width: 700px) {
-                margin: 0 10%;  
-            }
-            p{
-                background-color: var(--cor-fundo-principal);
-                text-align: justify;  
-                padding: 10px;
-            } 
-            
-        }
-                   
-
-
-        #lista-cursos{
-            display: flex;
-            flex-wrap: wrap;  
-            justify-content: center;
-            padding-bottom: 10%;
-            @media (max-width: 1500px) {
-                justify-content: space-evenly;
-                padding: 0 10% 5% 10%;
-            }
-            .cursos{
-                background-color: var(--cor-fundo-principal);
-                padding: 30px 30px;
-                margin: 10px;
-                width: 400px;
+            align-items: center;
+            padding: 40px 0;
+            .linhadotempo{
                 display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                list-style: none;
-                box-shadow: 5px 5px 10px #121E2C;
-                h4{
-                    text-align: justify; 
-                    font-size: 1.3rem;
+                flex-direction: row;
+                width: 100%;
+                margin: 10px;
+                justify-content: space-around;
+                .info-linhadotempo{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 420px;
+                    h4{
+                        color: var(--letra-secundaria);
+                    }
+                }
+                .img-linhadotempo{
+                    img{
+                        width: 100px;
+                        gap: 20px;
+                    }
+                }
+            }
+        }
+    }  
+
+    #formacoes-experiencia {      
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 5%;
+        h3{
+            color: var(--letra-secundaria);
+            font-size: 2rem;
+            padding: 1rem 0 3rem;
+            text-align: center;
+            margin: 0 10%;
+            width: 100%;
+        }
+
+        p{
+            padding: 5px;
+        }
+
+        #experiencias, #educacao{
+            h4{
+                padding: 20px;
+                text-align: center;
+                font-size: 1.5rem;
+                color: var(--letra-secundaria);
+            }
+        }
+        #experiencias{
+            
+            .experiencia{
+                padding: 10px 20px;
+                max-width: 600px;
+                h5{
+                    padding-left: 10px;
+                    font-size: 1.2rem;
                     padding: 10px 0;
                 }
-                        
-                ul{
-                    list-style: none;
-                    p{
-                        padding: 10px 0;
-                        text-align: justify;
-                        margin: 0 5%;
-                    }
-                
-                }
             }
-            
         }
+        #educacao{
+            #graduacao, #cursos{
+                padding: 10px 20px;
+                max-width: 600px;
+            }
 
+        }
     }
 
     #projetos{
-        background-color: var(--cor-fundo-principal);
-        padding: 3% 0;   
+        padding: 3% 0;
+        h3{
+            color: var(--letra-secundaria);
+            font-size: 2rem;
+            padding: 1rem 0 3rem;
+            text-align: center;
+            width: 100%;
+        }
+   
         #card{
             display: flex;
             flex-wrap: wrap;
@@ -258,6 +297,13 @@ main{
 
     #contato{
         padding-bottom: 2%;
+        h3{
+            color: var(--letra-secundaria);
+            font-size: 2rem;
+            padding: 1rem 0 3rem;
+            text-align: center;
+            width: 100%;
+        }
         .contato-links{
             display: flex;
             justify-content: center;
@@ -276,13 +322,15 @@ main{
                     width: 40px;
                     padding: 10px;
                 }
+                p{
+                    color:var(--letra-secundaria);
+                }
             }
         }
     }
 }
 
 footer{
-    background-color: var(--fundo-secundario);
     padding: 2%;
     text-align: center;
 }
