@@ -6,14 +6,14 @@
 
 :root {
     --cor-fundo-principal: 	#070008;
-    --fundo-secundario: #b093ff;
-    --letra-principal: 	#cccace;
-    --letra-secundaria: 	#5f76fc;
+    --letra-principal: 	#e2cff7;
+    --letra-secundaria: 	#a89af7;
     --letra-terciaria: #0D1724;
     --caixas-detalhes: 	#E5E5E5;
     --fonte-detalhe: 'Poppins';
     --fonte-texto: 'Inter';
 }
+
 
 *{
     padding: 0;
@@ -23,7 +23,38 @@
 
 body{
     font-family: var(--fonte-texto);
-    background: linear-gradient(0deg,  #2f0494, #170155,#070018, )
+    background-image: linear-gradient(to left bottom, #10063f,#12025d,  #251086, #2e17a1, #4521a8, #512ca5, #6826c4, #811dc3, #8911b8, #a706a7, #a00185);
+}
+
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    opacity: 0.1;
+    animation: twinkle 3s infinite ease-in-out;
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0.2; transform: scale(0.2); }
+    50% { opacity: 1; transform: scale(1.1); }
+}
+
+#stars-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+header, main, footer {
+    position: relative;
+    z-index: 1;
 }
 
 header{
@@ -51,20 +82,20 @@ header{
             li:hover{
                 background-color: var(--letra-secundaria);
                 border-radius: 5px;
+                a{
+                    color: #15017c;
+                }
+                
             }
         }
 
             
 
     }
-   
 }
 
 main{
     align-items: center;
-    
-
-    
     #nome-pagina{
         display: flex;
         align-items: center;
@@ -73,19 +104,18 @@ main{
         padding-top: 50px;
         width: 70%;
         margin: auto;
-
         img{
             max-width: 250px;
         }
         #texto{
-
             h1 {
                 text-align: center;
-                padding: 25px 0;
-                font-size: 2.8rem;
+                font-family: "Cinzel";
                 max-width: 800px;
+                font-size: 2rem;
+                padding: 20px 0;
                 text-transform: uppercase;
-                background: linear-gradient(90deg,#36BFB6, #4833EB, #EC096F,#f47215, );
+                background-image: linear-gradient(to right, #b0a0fb, #74b6ff, #05c8ff, #00d6fb, #00e0df);
                 background-size: 300% 100%;
                 animation: degrade 10s linear infinite alternate;
                 -webkit-background-clip: text;
@@ -101,29 +131,25 @@ main{
                 }
             }
 
-            @media (max-width: 480px) {
+            @media (min-width: 480px) {
                 h1 {
-                    font-size: 2.5rem; 
-                    padding: 20px;
+                    font-size: 3.4rem; 
                 } 
             }
-            @media (min-width: 1200px) {
+            @media (min-width: 1550px) {
                 h1 {
-                    font-size: 4rem; 
-                    padding: 20px;
+                    font-size: 4.5rem; 
                 } 
             }
 
             h2{
-                font-size: 1.2rem;
+                font-size: 1.5rem;
                 font-weight: 100;
                 text-align: center;
-
             }
             p {
                 text-align: justify;  
-                margin: 0 10%;  
-                padding: 10px;      
+                margin: 0 10%;       
             }
         }        
     }
@@ -139,18 +165,18 @@ main{
         align-items: center;
         justify-content: center;
         div{
-            max-width: 1000px;
-            min-width: 80%;
-            h3{
+            max-width: 1500px;
+            margin: 5%;
+                h3{
                 color: var(--letra-secundaria);
                 font-size: 2rem;
+                text-shadow: 1px 2px 1px #2b007ada;
                 padding: 1rem 0 3rem;
                 text-align: center;
                 margin: 0 10%;
             }
             p {
                 text-align: justify;  
-                margin: 0 2%;  
                 padding: 10px;      
             }
             
@@ -158,50 +184,57 @@ main{
     }
 
     #sobre-mim {
-        margin-top: 50px;
-        min-width: 80%;
-        max-width: 1000px;
-        margin: auto;
         display: flex;
         align-items: center;
         flex-direction: column;
-        h3{
-            color: var(--letra-secundaria);
-            font-size: 2rem;
-            padding: 1rem 0 3rem;
-            text-align: center;
-            margin: 0 10%;
-        }
-        p {
-            text-align: justify;  
-            margin: 0 2%;  
-            padding: 10px;      
-        }
 
+        #texto-sobre-mim{
+            max-width: 1500px;
+            margin: 0 5%;
+            h3{
+                color: var(--letra-secundaria);
+                font-size: 2rem;
+                padding: 1rem 0 3rem;
+                text-align: center;
+                margin: 0 10%;
+                text-shadow: 1px 2px 1px #2b007ada;
+            }
+            p {
+                text-align: justify;  
+                padding: 10px;      
+            }
+        }
+        
         #linhadotempo{
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
             padding: 40px 0;
+            max-width: 600px;
+            margin: 0 10%;
             .linhadotempo{
                 display: flex;
                 flex-direction: row;
-                width: 100%;
                 margin: 10px;
                 justify-content: space-around;
+                
                 .info-linhadotempo{
                     display: flex;
-                    align-items: center;
+                    align-items: flex-start;
                     flex-direction: column;
                     justify-content: center;
-                    width: 420px;
+                    max-width: 600px;
+                    text-align: left;
                     h4{
                         color: var(--letra-secundaria);
+                        text-shadow: 2px 2px 1px #32126dda;
                     }
+
                 }
                 .img-linhadotempo{
                     img{
                         width: 100px;
+                        margin: 0 20px;
                         gap: 20px;
                     }
                 }
@@ -217,14 +250,16 @@ main{
         h3{
             color: var(--letra-secundaria);
             font-size: 2rem;
-            padding: 1rem 0 3rem;
+            padding: 2rem 0 3rem 0;
             text-align: center;
             margin: 0 10%;
             width: 100%;
+            text-shadow: 2px 2px 1px #2b007ada;
         }
 
         p{
             padding: 5px;
+            color:var(--letra-principal);
         }
 
         #experiencias, #educacao{
@@ -233,6 +268,7 @@ main{
                 text-align: center;
                 font-size: 1.5rem;
                 color: var(--letra-secundaria);
+                text-shadow: 2px 2px 1px #300286da;
             }
         }
         #experiencias{
@@ -244,6 +280,7 @@ main{
                     padding-left: 10px;
                     font-size: 1.2rem;
                     padding: 10px 0;
+                    text-shadow: 2px 2px 1px #694f9bda;
                 }
             }
         }
@@ -258,14 +295,15 @@ main{
 
     #projetos{
         padding: 3% 0;
+        margin: 0 5%;
         h3{
             color: var(--letra-secundaria);
             font-size: 2rem;
-            padding: 1rem 0 3rem;
+            padding: 2rem 0 3rem;
             text-align: center;
             width: 100%;
+            text-shadow: 2px 2px 1px #2b007ada;
         }
-   
         #card{
             display: flex;
             flex-wrap: wrap;
@@ -273,7 +311,7 @@ main{
             .cards-projeto {
                 display: flex;
                 flex-direction: column;
-                background-color: var(--caixas-detalhes);
+                background-color:#37dbf869 ;
                 border-radius: 5px;
                 box-shadow: 2px 5px 20px #0D1724;
                 min-width: 100px;
@@ -287,7 +325,7 @@ main{
 
                 h4{
                     text-align: center;
-                    padding: 15px;
+                    padding: 2rem;
                     color: var(--letra-terciaria);
                 }
             }
@@ -296,34 +334,90 @@ main{
     }
 
     #contato{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding-bottom: 2%;
+        width: 100%;
         h3{
             color: var(--letra-secundaria);
             font-size: 2rem;
-            padding: 1rem 0 3rem;
+            padding: 3rem 0 3rem 0;
             text-align: center;
             width: 100%;
+            text-shadow: 2px 2px 1px #2b007ada;
+        }
+
+        #form-contato{
+            background-color: rgba(152, 146, 243, 0.432);
+            display: flex;
+            flex-direction: column;
+            padding: 20px 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 8px var(--cor-fundo-principal);
+            width: 60%;
+            margin: 2rem 0;
+            label{
+                color: var(--cor-fundo-principal);
+                padding: 10px;
+            }
+            
+            input{
+                height: 30px;
+                border: none;
+                border-radius: 5px;
+                color: var(--cor-fundo-principal);
+                padding: 2px;
+            }
+
+            textarea{
+                height: 100px;
+                border: none;
+                border-radius: 5px;
+                color: var(--cor-fundo-principal);
+                padding: 2px;
+            }
+
+            button{
+                margin: 5px 0;
+                height: 30px;
+                border: none;
+                border-radius: 5px;
+                background-color: var(--letra-principal);
+
+                color: var(--cor-fundo-principal);
+            }
+
         }
         .contato-links{
             display: flex;
             justify-content: center;
             justify-content: space-evenly;
             flex-wrap: wrap;
-            margin: auto;
-            width: 80%;
-            a{
+            background-image: url("/imagens/astronautafundo.png");
+            background-repeat: no-repeat;
+            background-position:  right bottom;
+            background-size: 180px;
+            width: 100%;
+            .link_{
                 display: flex;
                 flex-direction: column;
+                justify-content: space-between;
                 text-decoration: none;
-                width: 130px;
+                width: 200px;
                 align-items: center;
                 margin:10px 30px;
+                color:var(--letra-secundaria);
+                text-shadow: 2px 2px 1px #2b007ada;
+                font-size: 1.2rem;
                 img{
-                    width: 40px;
+                    width: 60px;
                     padding: 10px;
                 }
-                p{
-                    color:var(--letra-secundaria);
+
+                img:hover{
+                    background-color: #9278f0da;
+                    border-radius: 50px;
                 }
             }
         }
@@ -331,7 +425,8 @@ main{
 }
 
 footer{
-    padding: 2%;
+    width: 100%;
     text-align: center;
+    margin: 2rem 0;    
 }
 

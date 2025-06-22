@@ -3,9 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 :root {
   --cor-fundo-principal:	#070008;
-  --fundo-secundario: #b093ff;
-  --letra-principal:	#cccace;
-  --letra-secundaria:	#5f76fc;
+  --letra-principal:	#e2cff7;
+  --letra-secundaria:	#a89af7;
   --letra-terciaria: #0D1724;
   --caixas-detalhes:	#E5E5E5;
   --fonte-detalhe: "Poppins";
@@ -20,7 +19,43 @@
 
 body {
   font-family: var(--fonte-texto);
-  background: linear-gradient(0deg, #2f0494, #170155, #070018);
+  background-image: linear-gradient(to left bottom, #10063f, #12025d, #251086, #2e17a1, #4521a8, #512ca5, #6826c4, #811dc3, #8911b8, #a706a7, #a00185);
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  opacity: 0.1;
+  animation: twinkle 3s infinite ease-in-out;
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(0.2);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+#stars-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+header, main, footer {
+  position: relative;
+  z-index: 1;
 }
 
 header {
@@ -52,6 +87,9 @@ header nav ul li:hover {
   background-color: var(--letra-secundaria);
   border-radius: 5px;
 }
+header nav ul li:hover a {
+  color: #15017c;
+}
 
 main {
   align-items: center;
@@ -70,11 +108,12 @@ main #nome-pagina img {
 }
 main #nome-pagina #texto h1 {
   text-align: center;
-  padding: 25px 0;
-  font-size: 2.8rem;
+  font-family: "Cinzel";
   max-width: 800px;
+  font-size: 2rem;
+  padding: 20px 0;
   text-transform: uppercase;
-  background: linear-gradient(90deg, #36BFB6, #4833EB, #EC096F, #f47215);
+  background-image: linear-gradient(to right, #b0a0fb, #74b6ff, #05c8ff, #00d6fb, #00e0df);
   background-size: 300% 100%;
   animation: degrade 10s linear infinite alternate;
   -webkit-background-clip: text;
@@ -88,27 +127,24 @@ main #nome-pagina #texto h1 {
     background-position: 100% 50%;
   }
 }
-@media (max-width: 480px) {
+@media (min-width: 480px) {
   main #nome-pagina #texto h1 {
-    font-size: 2.5rem;
-    padding: 20px;
+    font-size: 3.4rem;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1550px) {
   main #nome-pagina #texto h1 {
-    font-size: 4rem;
-    padding: 20px;
+    font-size: 4.5rem;
   }
 }
 main #nome-pagina #texto h2 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 100;
   text-align: center;
 }
 main #nome-pagina #texto p {
   text-align: justify;
   margin: 0 10%;
-  padding: 10px;
 }
 main #inicio-pagina {
   background-image: url(/imagens/Detalhe\ fundo.png);
@@ -122,67 +158,71 @@ main #inicio-pagina {
   justify-content: center;
 }
 main #inicio-pagina div {
-  max-width: 1000px;
-  min-width: 80%;
+  max-width: 1500px;
+  margin: 5%;
 }
 main #inicio-pagina div h3 {
   color: var(--letra-secundaria);
   font-size: 2rem;
+  text-shadow: 1px 2px 1px rgba(43, 0, 122, 0.8549019608);
   padding: 1rem 0 3rem;
   text-align: center;
   margin: 0 10%;
 }
 main #inicio-pagina div p {
   text-align: justify;
-  margin: 0 2%;
   padding: 10px;
 }
 main #sobre-mim {
-  margin-top: 50px;
-  min-width: 80%;
-  max-width: 1000px;
-  margin: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-main #sobre-mim h3 {
+main #sobre-mim #texto-sobre-mim {
+  max-width: 1500px;
+  margin: 0 5%;
+}
+main #sobre-mim #texto-sobre-mim h3 {
   color: var(--letra-secundaria);
   font-size: 2rem;
   padding: 1rem 0 3rem;
   text-align: center;
   margin: 0 10%;
+  text-shadow: 1px 2px 1px rgba(43, 0, 122, 0.8549019608);
 }
-main #sobre-mim p {
+main #sobre-mim #texto-sobre-mim p {
   text-align: justify;
-  margin: 0 2%;
   padding: 10px;
 }
 main #sobre-mim #linhadotempo {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   padding: 40px 0;
+  max-width: 600px;
+  margin: 0 10%;
 }
 main #sobre-mim #linhadotempo .linhadotempo {
   display: flex;
   flex-direction: row;
-  width: 100%;
   margin: 10px;
   justify-content: space-around;
 }
 main #sobre-mim #linhadotempo .linhadotempo .info-linhadotempo {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   justify-content: center;
-  width: 420px;
+  max-width: 600px;
+  text-align: left;
 }
 main #sobre-mim #linhadotempo .linhadotempo .info-linhadotempo h4 {
   color: var(--letra-secundaria);
+  text-shadow: 2px 2px 1px rgba(50, 18, 109, 0.8549019608);
 }
 main #sobre-mim #linhadotempo .linhadotempo .img-linhadotempo img {
   width: 100px;
+  margin: 0 20px;
   gap: 20px;
 }
 main #formacoes-experiencia {
@@ -194,19 +234,22 @@ main #formacoes-experiencia {
 main #formacoes-experiencia h3 {
   color: var(--letra-secundaria);
   font-size: 2rem;
-  padding: 1rem 0 3rem;
+  padding: 2rem 0 3rem 0;
   text-align: center;
   margin: 0 10%;
   width: 100%;
+  text-shadow: 2px 2px 1px rgba(43, 0, 122, 0.8549019608);
 }
 main #formacoes-experiencia p {
   padding: 5px;
+  color: var(--letra-principal);
 }
 main #formacoes-experiencia #experiencias h4, main #formacoes-experiencia #educacao h4 {
   padding: 20px;
   text-align: center;
   font-size: 1.5rem;
   color: var(--letra-secundaria);
+  text-shadow: 2px 2px 1px rgba(48, 2, 134, 0.8549019608);
 }
 main #formacoes-experiencia #experiencias .experiencia {
   padding: 10px 20px;
@@ -216,6 +259,7 @@ main #formacoes-experiencia #experiencias .experiencia h5 {
   padding-left: 10px;
   font-size: 1.2rem;
   padding: 10px 0;
+  text-shadow: 2px 2px 1px rgba(105, 79, 155, 0.8549019608);
 }
 main #formacoes-experiencia #educacao #graduacao, main #formacoes-experiencia #educacao #cursos {
   padding: 10px 20px;
@@ -223,13 +267,15 @@ main #formacoes-experiencia #educacao #graduacao, main #formacoes-experiencia #e
 }
 main #projetos {
   padding: 3% 0;
+  margin: 0 5%;
 }
 main #projetos h3 {
   color: var(--letra-secundaria);
   font-size: 2rem;
-  padding: 1rem 0 3rem;
+  padding: 2rem 0 3rem;
   text-align: center;
   width: 100%;
+  text-shadow: 2px 2px 1px rgba(43, 0, 122, 0.8549019608);
 }
 main #projetos #card {
   display: flex;
@@ -239,7 +285,7 @@ main #projetos #card {
 main #projetos #card .cards-projeto {
   display: flex;
   flex-direction: column;
-  background-color: var(--caixas-detalhes);
+  background-color: rgba(55, 219, 248, 0.4117647059);
   border-radius: 5px;
   box-shadow: 2px 5px 20px #0D1724;
   min-width: 100px;
@@ -253,44 +299,94 @@ main #projetos #card .cards-projeto img {
 }
 main #projetos #card .cards-projeto h4 {
   text-align: center;
-  padding: 15px;
+  padding: 2rem;
   color: var(--letra-terciaria);
 }
 main #contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-bottom: 2%;
+  width: 100%;
 }
 main #contato h3 {
   color: var(--letra-secundaria);
   font-size: 2rem;
-  padding: 1rem 0 3rem;
+  padding: 3rem 0 3rem 0;
   text-align: center;
   width: 100%;
+  text-shadow: 2px 2px 1px rgba(43, 0, 122, 0.8549019608);
+}
+main #contato #form-contato {
+  background-color: rgba(152, 146, 243, 0.432);
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px var(--cor-fundo-principal);
+  width: 60%;
+  margin: 2rem 0;
+}
+main #contato #form-contato label {
+  color: var(--cor-fundo-principal);
+  padding: 10px;
+}
+main #contato #form-contato input {
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  color: var(--cor-fundo-principal);
+  padding: 2px;
+}
+main #contato #form-contato textarea {
+  height: 100px;
+  border: none;
+  border-radius: 5px;
+  color: var(--cor-fundo-principal);
+  padding: 2px;
+}
+main #contato #form-contato button {
+  margin: 5px 0;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--letra-principal);
+  color: var(--cor-fundo-principal);
 }
 main #contato .contato-links {
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin: auto;
-  width: 80%;
+  background-image: url("/imagens/astronautafundo.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 180px;
+  width: 100%;
 }
-main #contato .contato-links a {
+main #contato .contato-links .link_ {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   text-decoration: none;
-  width: 130px;
+  width: 200px;
   align-items: center;
   margin: 10px 30px;
+  color: var(--letra-secundaria);
+  text-shadow: 2px 2px 1px rgba(43, 0, 122, 0.8549019608);
+  font-size: 1.2rem;
 }
-main #contato .contato-links a img {
-  width: 40px;
+main #contato .contato-links .link_ img {
+  width: 60px;
   padding: 10px;
 }
-main #contato .contato-links a p {
-  color: var(--letra-secundaria);
+main #contato .contato-links .link_ img:hover {
+  background-color: rgba(146, 120, 240, 0.8549019608);
+  border-radius: 50px;
 }
 
 footer {
-  padding: 2%;
+  width: 100%;
   text-align: center;
+  margin: 2rem 0;
 }/*# sourceMappingURL=style.css.map */
