@@ -147,7 +147,7 @@ main #nome-pagina #texto p {
   margin: 0 10%;
 }
 main #inicio-pagina {
-  background-image: url(/imagens/Detalhe\ fundo.png);
+  background-image: url(/imagens/fundo/Detalhe\ fundo.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -358,7 +358,7 @@ main #contato .contato-links {
   justify-content: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  background-image: url("/imagens/astronautafundo.png");
+  background-image: url("/imagens/fundo/astronautafundo.png");
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 180px;
