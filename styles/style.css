@@ -288,11 +288,11 @@ main #projetos #card .cards-projeto {
   min-width: 100px;
   max-width: 300px;
   margin: 2px;
-  padding: 3px 0px;
   margin-top: 40px;
 }
 main #projetos #card .cards-projeto img {
   width: auto;
+  border-radius: 5px;
 }
 main #projetos #card .cards-projeto h4 {
   text-align: center;
