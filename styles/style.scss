@@ -160,20 +160,17 @@ main{
         background-size: cover;
         background-position: center;
         background-blend-mode: color-burn 2%;
-        min-height: 500px;
         display: flex;
         align-items: center;
         justify-content: center;
         div{
             max-width: 1500px;
-            margin: 5%;
                 h3{
                 color: var(--letra-secundaria);
                 font-size: 2rem;
                 text-shadow: 1px 2px 1px #2b007ada;
                 padding: 1rem 0 3rem;
                 text-align: center;
-                margin: 0 10%;
             }
             p {
                 text-align: justify;  
