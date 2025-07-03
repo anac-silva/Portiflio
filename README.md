@@ -36,7 +36,7 @@ Você pode visualizar o portfólio publicado neste link:
 🔗 anac-silva.github.io/Portifolio
 
 ## 🖼️ Captura de Tela
-![portifólio](https://github.com/user-attachments/assets/9b64fbd4-9913-400a-874a-bdf9c7fa5907)
+![Captura de tela 2025-07-02 230645](https://github.com/user-attachments/assets/74825788-f111-445f-bfb3-a9f86ee2f525)
 
 ## 📬 Contato
 Se você quiser conversar sobre tecnologia, projetos ou oportunidades, entre em contato comigo:
