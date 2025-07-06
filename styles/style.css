@@ -2,31 +2,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Poppins:wght@300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 :root {
-  --cor-fundo-principal:	#070008;
-  --letra-principal:	#e2cff7;
-  --letra-secundaria:	#a89af7;
-  --letra-terciaria: #0D1724;
-  --caixas-detalhes:	#E5E5E5;
+  --cor-letra-texto-dark: #ebd8ff;
+  --cor-letra-secundaria-dark: #a494fd;
+  --cor-letra-terciaria-dark: #040318;
+  --cor-fundo-box-dark: #10063f7e;
+  --cor-sombras-dark: #12042e;
   --fonte-detalhe: "Poppins";
   --fonte-texto: "Inter";
+  --cor-estrelas: #ffffff;
 }
 
 * {
   padding: 0;
   margin: 0;
-  color: var(--letra-principal);
+  color: var(--cor-letra-texto-dark);
 }
 
 body {
   font-family: var(--fonte-texto);
   background-image: linear-gradient(to left bottom, #10063f, #12025d, #251086, #2e17a1, #4521a8, #512ca5, #6826c4, #811dc3, #8911b8, #a706a7, #a00185);
+  transition: background-image 0.8s ease;
 }
 
 .star {
   position: absolute;
   width: 2px;
   height: 2px;
-  background: rgb(255, 255, 255);
+  background: var(--cor-estrelas);
   border-radius: 50%;
   opacity: 0.1;
   animation: twinkle 3s infinite ease-in-out;
@@ -62,9 +64,10 @@ header {
   display: flex;
   justify-content: flex-end;
   width: 100%;
+  align-items: center;
 }
 header nav {
-  margin: 2% 5% 2% 0;
+  margin: 2% 2% 2% 0;
 }
 header nav ul {
   display: flex;
@@ -84,11 +87,33 @@ header nav ul li a {
   font-size: 1.3rem;
 }
 header nav ul li:hover {
-  background-color: var(--letra-secundaria);
+  background-color: var(--cor-letra-secundaria-dark);
   border-radius: 5px;
 }
 header nav ul li:hover a {
-  color: #15017c;
+  color: var(--cor-letra-terciaria-dark);
+}
+header .trilho {
+  background-color: var(--cor-letra-secundaria-dark);
+  width: 70px;
+  height: 40px;
+  margin: 0 30px;
+  border-radius: 25px;
+  position: relative;
+  cursor: pointer;
+}
+header .trilho .indicador {
+  background-color: var(--cor-letra-texto-dark);
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  border-radius: 20px;
+  position: absolute;
+  left: 0;
+  transition: left 0.5s ease;
+}
+header .trilho.light .indicador {
+  left: 30px;
 }
 
 main {
@@ -160,15 +185,17 @@ main #inicio-pagina div {
   max-width: 1500px;
 }
 main #inicio-pagina div h3 {
-  color: var(--letra-secundaria);
+  color: var(--cor-letra-secundaria-dark);
   font-size: 2rem;
-  text-shadow: 1px 2px 1px rgba(43, 0, 122, 0.8549019608);
+  text-shadow: 1px 2px 3px var(--cor-sombras-dark);
   padding: 1rem 0 3rem;
   text-align: center;
+  margin: 2rem 0;
 }
 main #inicio-pagina div p {
   text-align: justify;
   padding: 10px;
+  margin: 0 5%;
 }
 main #sobre-mim {
   display: flex;
@@ -180,12 +207,12 @@ main #sobre-mim #texto-sobre-mim {
   margin: 0 5%;
 }
 main #sobre-mim #texto-sobre-mim h3 {
-  color: var(--letra-secundaria);
+  color: var(--cor-letra-secundaria-dark);
   font-size: 2rem;
   padding: 1rem 0 3rem;
   text-align: center;
   margin: 0 10%;
-  text-shadow: 1px 2px 1px rgba(43, 0, 122, 0.8549019608);
+  text-shadow: 1px 2px 1px var(--cor-sombras-dark);
 }
 main #sobre-mim #texto-sobre-mim p {
   text-align: justify;
@@ -214,8 +241,8 @@ main #sobre-mim #linhadotempo .linhadotempo .info-linhadotempo {
   text-align: left;
 }
 main #sobre-mim #linhadotempo .linhadotempo .info-linhadotempo h4 {
-  color: var(--letra-secundaria);
-  text-shadow: 2px 2px 1px rgba(50, 18, 109, 0.8549019608);
+  color: var(--cor-letra-secundaria-dark);
+  text-shadow: 1px 1px 3px var(--cor-sombras-dark);
 }
 main #sobre-mim #linhadotempo .linhadotempo .img-linhadotempo img {
   width: 100px;
@@ -229,24 +256,24 @@ main #formacoes-experiencia {
   margin: 0 5%;
 }
 main #formacoes-experiencia h3 {
-  color: var(--letra-secundaria);
+  color: var(--cor-letra-secundaria-dark);
   font-size: 2rem;
   padding: 2rem 0 3rem 0;
   text-align: center;
   margin: 0 10%;
   width: 100%;
-  text-shadow: 2px 2px 1px rgba(43, 0, 122, 0.8549019608);
+  text-shadow: 1px 1px 3px var(--cor-sombras-dark);
 }
 main #formacoes-experiencia p {
   padding: 5px;
-  color: var(--letra-principal);
+  color: var(--cor-letra-texto-dark);
 }
 main #formacoes-experiencia #experiencias h4, main #formacoes-experiencia #educacao h4 {
   padding: 20px;
   text-align: center;
   font-size: 1.5rem;
-  color: var(--letra-secundaria);
-  text-shadow: 2px 2px 1px rgba(48, 2, 134, 0.8549019608);
+  color: var(--cor-letra-secundaria-dark);
+  text-shadow: 1px 1px 3px var(--cor-sombras-dark);
 }
 main #formacoes-experiencia #experiencias .experiencia {
   padding: 10px 20px;
@@ -256,7 +283,7 @@ main #formacoes-experiencia #experiencias .experiencia h5 {
   padding-left: 10px;
   font-size: 1.2rem;
   padding: 10px 0;
-  text-shadow: 2px 2px 1px rgba(105, 79, 155, 0.8549019608);
+  text-shadow: 1px 1px 3px var(--cor-sombras-dark);
 }
 main #formacoes-experiencia #educacao #graduacao, main #formacoes-experiencia #educacao #cursos {
   padding: 10px 20px;
@@ -267,12 +294,12 @@ main #projetos {
   margin: 0 5%;
 }
 main #projetos h3 {
-  color: var(--letra-secundaria);
+  color: var(--cor-letra-secundaria-dark);
   font-size: 2rem;
   padding: 2rem 0 3rem;
   text-align: center;
   width: 100%;
-  text-shadow: 2px 2px 1px rgba(43, 0, 122, 0.8549019608);
+  text-shadow: 1px 1px 3px var(--cor-sombras-dark);
 }
 main #projetos #card {
   display: flex;
@@ -282,9 +309,9 @@ main #projetos #card {
 main #projetos #card .cards-projeto {
   display: flex;
   flex-direction: column;
-  background-color: rgba(55, 219, 248, 0.4117647059);
+  background-color: var(--cor-fundo-box-dark);
   border-radius: 5px;
-  box-shadow: 2px 5px 20px #0D1724;
+  box-shadow: 2px 2px 10px var(--cor-sombras-dark);
   min-width: 100px;
   max-width: 300px;
   margin: 2px;
@@ -297,7 +324,7 @@ main #projetos #card .cards-projeto img {
 main #projetos #card .cards-projeto h4 {
   text-align: center;
   padding: 2rem;
-  color: var(--letra-terciaria);
+  color: var(--cor-letra-texto-dark);
 }
 main #contato {
   display: flex;
@@ -307,39 +334,39 @@ main #contato {
   width: 100%;
 }
 main #contato h3 {
-  color: var(--letra-secundaria);
+  color: var(--cor-letra-secundaria-dark);
   font-size: 2rem;
   padding: 3rem 0 3rem 0;
   text-align: center;
   width: 100%;
-  text-shadow: 2px 2px 1px rgba(43, 0, 122, 0.8549019608);
+  text-shadow: 1px 1px 3px var(--cor-sombras-dark);
 }
 main #contato #form-contato {
-  background-color: rgba(152, 146, 243, 0.432);
+  background-color: var(--cor-fundo-box-dark);
   display: flex;
   flex-direction: column;
   padding: 20px 20px;
   border-radius: 10px;
-  box-shadow: 2px 2px 8px var(--cor-fundo-principal);
+  box-shadow: 2px 2px 8px var(--cor-sombras-dark);
   width: 60%;
   margin: 2rem 0;
 }
 main #contato #form-contato label {
-  color: var(--cor-fundo-principal);
+  color: var(--cor-letra-texto-dark);
   padding: 10px;
 }
 main #contato #form-contato input {
   height: 30px;
   border: none;
   border-radius: 5px;
-  color: var(--cor-fundo-principal);
+  color: var(--cor-letra-terciaria-dark);
   padding: 2px;
 }
 main #contato #form-contato textarea {
   height: 100px;
   border: none;
   border-radius: 5px;
-  color: var(--cor-fundo-principal);
+  color: var(--cor-letra-terciaria-dark);
   padding: 2px;
 }
 main #contato #form-contato button {
@@ -347,8 +374,8 @@ main #contato #form-contato button {
   height: 30px;
   border: none;
   border-radius: 5px;
-  background-color: var(--letra-principal);
-  color: var(--cor-fundo-principal);
+  background-color: var(--cor-letra-texto-dark);
+  color: var(--cor-letra-terciaria-dark);
 }
 main #contato .contato-links {
   display: flex;
@@ -369,8 +396,8 @@ main #contato .contato-links .link_ {
   width: 200px;
   align-items: center;
   margin: 10px 30px;
-  color: var(--letra-secundaria);
-  text-shadow: 2px 2px 1px rgba(43, 0, 122, 0.8549019608);
+  color: var(--cor-letra-secundaria-dark);
+  text-shadow: 1px 1px 3px var(--cor-sombras-dark);
   font-size: 1.2rem;
 }
 main #contato .contato-links .link_ img {
@@ -378,8 +405,12 @@ main #contato .contato-links .link_ img {
   padding: 10px;
 }
 main #contato .contato-links .link_ img:hover {
-  background-color: rgba(146, 120, 240, 0.8549019608);
+  background-color: var(--cor-letra-secundaria-dark);
   border-radius: 50px;
+}
+
+p, h1, h2, h3, h4, a {
+  transition: color 0.5s ease;
 }
 
 footer {
