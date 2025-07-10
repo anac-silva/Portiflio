@@ -317,11 +317,14 @@ main #projetos #card .cards-projeto {
   margin: 2px;
   margin-top: 40px;
 }
-main #projetos #card .cards-projeto img {
-  width: auto;
+main #projetos #card .cards-projeto .links-projetos {
+  text-decoration: none;
+}
+main #projetos #card .cards-projeto .links-projetos img {
+  width: 100%;
   border-radius: 5px;
 }
-main #projetos #card .cards-projeto h4 {
+main #projetos #card .cards-projeto .links-projetos h4 {
   text-align: center;
   padding: 2rem;
   color: var(--cor-letra-texto-dark);

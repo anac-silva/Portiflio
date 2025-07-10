@@ -345,17 +345,20 @@ main{
                 min-width: 100px;
                 max-width: 300px;
                 margin: 2px;
-                margin-top: 40px;                    
-                img{
-                    width: auto;
-                    border-radius: 5px;
-                }
-
-                h4{
-                    text-align: center;
-                    padding: 2rem;
-                    color: var(--cor-letra-texto-dark);
-                }
+                margin-top: 40px;  
+                .links-projetos{
+                    text-decoration: none;
+                    img{
+                        width: 100%;
+                        border-radius: 5px;
+                    }
+                    h4{
+                        text-align: center;
+                        padding: 2rem;
+                        color: var(--cor-letra-texto-dark);
+                    }               
+                } 
+                
             }
         }
         
