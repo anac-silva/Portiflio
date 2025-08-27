@@ -183,12 +183,10 @@ main{
         }        
     }
 
-    #inicio-pagina {
-        background-image: url(/imagens/fundo/Detalhe\ fundo.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-blend-mode: color-burn 2%;
+    #sobre-mim {
+        margin: 5% 10%;
+        background-color: var(--cor-fundo-box-dark);
+        border-radius: 15px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -198,83 +196,26 @@ main{
                 color: var(--cor-letra-secundaria-dark);
                 font-size: 2rem;
                 text-shadow: 1px 2px 3px var(--cor-sombras-dark);
-                padding: 1rem 0 3rem;
+                padding-top: 1rem;
                 text-align: center;
-                margin: 2rem 0;
+
             }
             p {
                 text-align: justify;  
                 padding: 10px;  
-                margin: 0 5%;    
+                margin: 2% 5%;    
             }
             
         }
     }
 
-    #sobre-mim {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-
-        #texto-sobre-mim{
-            max-width: 1500px;
-            margin: 0 5%;
-            h3{
-                color: var(--cor-letra-secundaria-dark);
-                font-size: 2rem;
-                padding: 1rem 0 3rem;
-                text-align: center;
-                margin: 0 10%;
-                text-shadow: 1px 2px 1px var(--cor-sombras-dark);
-            }
-            p {
-                text-align: justify;  
-                padding: 10px;      
-            }
-        }
-        
-        #linhadotempo{
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            padding: 40px 0;
-            max-width: 600px;
-            margin: 0 10%;
-            .linhadotempo{
-                display: flex;
-                flex-direction: row;
-                margin: 10px;
-                justify-content: space-around;
-                
-                .info-linhadotempo{
-                    display: flex;
-                    align-items: flex-start;
-                    flex-direction: column;
-                    justify-content: center;
-                    max-width: 600px;
-                    text-align: left;
-                    h4{
-                        color: var(--cor-letra-secundaria-dark);
-                        text-shadow: 1px 1px 3px var(--cor-sombras-dark);
-                    }
-
-                }
-                .img-linhadotempo{
-                    img{
-                        width: 100px;
-                        margin: 0 20px;
-                        gap: 20px;
-                    }
-                }
-            }
-        }
-    }  
-
     #formacoes-experiencia {      
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin: 0 5%;
+        margin: 5% 10%;
+        background-color: var(--cor-fundo-box-dark);
+        border-radius: 15px;
         h3{
             color: var(--cor-letra-secundaria-dark);
             font-size: 2rem;
@@ -310,11 +251,14 @@ main{
                     padding: 10px 0;
                     text-shadow: 1px 1px 3px var(--cor-sombras-dark);
                 }
+                p {
+                    text-align: justify;
+                }
             }
         }
         #educacao{
             #graduacao, #cursos{
-                padding: 10px 20px;
+                padding: 20px;
                 max-width: 600px;
             }
 
